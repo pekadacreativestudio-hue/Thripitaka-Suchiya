@@ -46,27 +46,11 @@ st.markdown(
   --shadow: 0 1px 2px rgba(43,38,32,0.03), 0 2px 8px rgba(43,38,32,0.03);
   --radius: 14px;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #241512;
-    --surface: #2F1D17;
-    --surface-2: #3A2419;
-    --text: #F1E6D2;
-    --muted: #B7A48C;
-    --accent: #E0B23C;
-    --accent-ink: #241512;
-    --border: #4A3226;
-    --vinaya: #E39AA2;
-    --sutta: #CDA268;
-    --abhi: #AFA79B;
-    --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 6px 20px rgba(0,0,0,0.4);
-  }
-}
 
 html, body, [class*="css"]  {
   font-family: "Noto Sans Sinhala", "Iskoola Pota", "Nirmala UI", "Sinhala Sangam MN", system-ui, sans-serif;
 }
-.stApp { background: var(--bg); color: var(--text); }
+.stApp { background: var(--bg); color: var(--text); color-scheme: light; }
 #MainMenu, footer, header[data-testid="stHeader"] { visibility: visible; }
 
 .suchiya-eyebrow {
