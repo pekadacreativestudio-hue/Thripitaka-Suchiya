@@ -14,7 +14,18 @@ st.markdown(
 <style>
 .block-container { padding: 0 !important; max-width: 100% !important; }
 #MainMenu, footer { visibility: hidden; }
-iframe { display: block; }
+iframe {
+    display: block;
+    /* The embedded page uses position:fixed for its modal, which centers
+       relative to *this iframe's own box*, not the browser window. If the
+       iframe is taller than the visible window, the outer Streamlit page
+       has to scroll to reveal the rest of it, and the modal ends up
+       centered on a part of the iframe that isn't what's currently on
+       screen. Locking the iframe to the actual viewport height (with its
+       own internal scrollbar for long content) keeps "centered" meaning
+       what the user actually sees. */
+    height: calc(100vh - 3.5rem) !important;
+}
 </style>
 """,
     unsafe_allow_html=True,
@@ -23,4 +34,4 @@ iframe { display: block; }
 HTML_PATH = Path(__file__).parent / "assets" / "suchiya_reference.html"
 html = HTML_PATH.read_text(encoding="utf-8")
 
-components.html(html, height=1400, scrolling=True)
+components.html(html, height=900, scrolling=True)
