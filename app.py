@@ -32,19 +32,19 @@ st.markdown(
     """
 <style>
 :root {
-  --bg: #FBF6EA;
+  --bg: #FBF8F1;
   --surface: #FFFFFF;
-  --surface-2: #F1E6C9;
-  --text: #3B2A20;
-  --muted: #8A7A68;
-  --accent: #C9971F;
-  --accent-ink: #3B2A20;
-  --border: #E3D6B8;
-  --vinaya: #7A1F2B;
-  --sutta: #6B4423;
-  --abhi: #6E645A;
-  --shadow: 0 1px 2px rgba(59,42,32,0.06), 0 4px 14px rgba(59,42,32,0.07);
-  --radius: 14px;
+  --surface-2: #F4EDDC;
+  --text: #4A3B2E;
+  --muted: #A79C8C;
+  --accent: #D1A857;
+  --accent-ink: #4A3B2E;
+  --border: #EFE7D6;
+  --vinaya: #B2716B;
+  --sutta: #AD8E63;
+  --abhi: #A39A8C;
+  --shadow: 0 1px 2px rgba(74,59,46,0.04), 0 3px 12px rgba(74,59,46,0.05);
+  --radius: 16px;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -104,12 +104,12 @@ div[data-testid="stTextInput"] input:focus {
 
 .card {
   background: var(--surface); border: 1px solid var(--border);
-  border-left: 4px solid var(--pk-color, var(--accent));
+  border-left: 3px solid var(--pk-color, var(--accent));
   border-radius: var(--radius); padding: 14px 18px; margin-bottom: 10px;
   box-shadow: var(--shadow);
 }
 .card .sutra { font-size: 18px; font-weight: 600; margin: 0 0 8px; color: var(--text); }
-.card .sutra mark { background: rgba(201,151,31,0.35); color: inherit; border-radius: 3px; padding: 0 1px; }
+.card .sutra mark { background: rgba(209,168,87,0.32); color: inherit; border-radius: 3px; padding: 0 1px; }
 .fieldgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 8px 20px; font-size: 14px; }
 .fieldgrid label { display: block; font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase;
@@ -118,9 +118,9 @@ div[data-testid="stTextInput"] input:focus {
 .fieldgrid .grantha .val { font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
 .pk-badge { display: inline-block; font-size: 11px; padding: 1px 8px; border-radius: 999px;
   font-family: system-ui, sans-serif; letter-spacing: .03em; }
-.pk-vinaya { background: rgba(122,31,43,0.14); color: var(--vinaya); }
-.pk-sutta { background: rgba(107,68,35,0.14); color: var(--sutta); }
-.pk-abhi { background: rgba(110,100,90,0.16); color: var(--abhi); }
+.pk-vinaya { background: rgba(178,113,107,0.14); color: var(--vinaya); }
+.pk-sutta { background: rgba(173,142,99,0.16); color: var(--sutta); }
+.pk-abhi { background: rgba(163,154,140,0.18); color: var(--abhi); }
 
 .suchiya-footer { margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--border);
   font-size: 12px; color: var(--muted); line-height: 1.6; font-family: system-ui, sans-serif; }
