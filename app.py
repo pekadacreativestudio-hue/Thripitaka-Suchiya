@@ -12,7 +12,7 @@ st.set_page_config(
 st.markdown(
     """
 <style>
-.block-container { padding: 1rem 0 0 0 !important; max-width: 100% !important; }
+.block-container { padding: 2.5rem 0 0 0 !important; max-width: 100% !important; }
 #MainMenu, footer { visibility: hidden; }
 iframe {
     display: block;
@@ -25,11 +25,11 @@ iframe {
        own internal scrollbar for long content) keeps "centered" meaning
        what the user actually sees.
 
-       The 1rem block-container padding above adds a visible gap below
+       The 2.5rem block-container padding above adds a visible gap below
        Streamlit Cloud's own viewer toolbar (Share/star/edit/GitHub) so it
        doesn't crowd our header; the extra rem is subtracted here too so
        the total footprint still fits one viewport with no outer scroll. */
-    height: calc(100vh - 6rem) !important;
+    height: calc(100vh - 7.5rem) !important;
 }
 </style>
 """,
